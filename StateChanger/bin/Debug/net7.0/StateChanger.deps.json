@@ -1,0 +1,314 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "StateChanger/1.0.0": {
+        "dependencies": {
+          "zb-client": "2.3.0"
+        },
+        "runtime": {
+          "StateChanger.dll": {}
+        }
+      },
+      "Google.Apis/1.46.0": {
+        "dependencies": {
+          "Google.Apis.Core": "1.46.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.dll": {
+            "assemblyVersion": "1.46.0.0",
+            "fileVersion": "1.46.0.0"
+          }
+        }
+      },
+      "Google.Apis.Auth/1.46.0": {
+        "dependencies": {
+          "Google.Apis": "1.46.0",
+          "Google.Apis.Core": "1.46.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {
+            "assemblyVersion": "1.46.0.0",
+            "fileVersion": "1.46.0.0"
+          },
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {
+            "assemblyVersion": "1.46.0.0",
+            "fileVersion": "1.46.0.0"
+          }
+        }
+      },
+      "Google.Apis.Core/1.46.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {
+            "assemblyVersion": "1.46.0.0",
+            "fileVersion": "1.46.0.0"
+          }
+        }
+      },
+      "Google.Protobuf/3.24.4": {
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "assemblyVersion": "3.24.4.0",
+            "fileVersion": "3.24.4.0"
+          }
+        }
+      },
+      "Grpc/2.46.6": {
+        "dependencies": {
+          "Grpc.Core": "2.46.6"
+        }
+      },
+      "Grpc.Auth/2.57.0": {
+        "dependencies": {
+          "Google.Apis.Auth": "1.46.0",
+          "Grpc.Core.Api": "2.57.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Grpc.Auth.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.57.0.0"
+          }
+        }
+      },
+      "Grpc.Core/2.46.6": {
+        "dependencies": {
+          "Grpc.Core.Api": "2.57.0",
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Grpc.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.46.6.0"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm64/native/libgrpc_csharp_ext.arm64.so": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libgrpc_csharp_ext.x64.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libgrpc_csharp_ext.x64.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/grpc_csharp_ext.x64.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/grpc_csharp_ext.x86.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Grpc.Core.Api/2.57.0": {
+        "runtime": {
+          "lib/netstandard2.1/Grpc.Core.Api.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.57.0.0"
+          }
+        }
+      },
+      "Grpc.Net.Client/2.57.0": {
+        "dependencies": {
+          "Grpc.Net.Common": "2.57.0",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
+        },
+        "runtime": {
+          "lib/net7.0/Grpc.Net.Client.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.57.0.0"
+          }
+        }
+      },
+      "Grpc.Net.Common/2.57.0": {
+        "dependencies": {
+          "Grpc.Core.Api": "2.57.0"
+        },
+        "runtime": {
+          "lib/net7.0/Grpc.Net.Common.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.57.0.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0": {
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/7.0.1": {
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.723.27404"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "System.Memory/4.5.3": {},
+      "System.Threading.Tasks.Dataflow/7.0.0": {},
+      "zb-client/2.3.0": {
+        "dependencies": {
+          "Google.Protobuf": "3.24.4",
+          "Grpc": "2.46.6",
+          "Grpc.Auth": "2.57.0",
+          "Grpc.Net.Client": "2.57.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
+          "System.Threading.Tasks.Dataflow": "7.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/Client.dll": {
+            "assemblyVersion": "2.3.0.0",
+            "fileVersion": "2.3.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StateChanger/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Google.Apis/1.46.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W6ZKacMAkZHOjQFv6iWpoADOgmZMUggnz+nPFYF8a4lRtAHD6nur4EcwtzU9IEZF+KeQz0DQLO6jVjMP1iXqPQ==",
+      "path": "google.apis/1.46.0",
+      "hashPath": "google.apis.1.46.0.nupkg.sha512"
+    },
+    "Google.Apis.Auth/1.46.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Mc/qDXb5Xg599Q7kzsecloOQeHwTI+/PmeucmcJurZSFsPYziaPaejHy+Z+52evj54H/zGc5ohcyABrT32vmGQ==",
+      "path": "google.apis.auth/1.46.0",
+      "hashPath": "google.apis.auth.1.46.0.nupkg.sha512"
+    },
+    "Google.Apis.Core/1.46.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I7tUKeY70MJxHnYu4cRzug90e2oaClhgRAwYIrqWnqIvojF2DTB3D5DeGbrEcgKGHEGL5ADgjBMFIhdnAO2Iqg==",
+      "path": "google.apis.core/1.46.0",
+      "hashPath": "google.apis.core.1.46.0.nupkg.sha512"
+    },
+    "Google.Protobuf/3.24.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TmUI4ndd3x5HePyLmqAmGT6oVvoRCu+bMmrJmOpAFtCPEB+oUMWF8dyVY1zxXry/8cqsTHWszYRIAwpuUNpUyA==",
+      "path": "google.protobuf/3.24.4",
+      "hashPath": "google.protobuf.3.24.4.nupkg.sha512"
+    },
+    "Grpc/2.46.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vpC39vgCxbVBnsn8boeQv2aGIdEFqQMnjsoDvyYfr6tC93Fe9KqNG1mAiF6KLzJTwk6aiWHGNYE2EqmDUzk5ng==",
+      "path": "grpc/2.46.6",
+      "hashPath": "grpc.2.46.6.nupkg.sha512"
+    },
+    "Grpc.Auth/2.57.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CkN6GXLLTivOBLWYuX6zZUEjvFuDt1y6xD2yzqBNQwVv4Sl48tHd5WnlcDt+XnitMfm4i1aovaodDZOW7rcY4w==",
+      "path": "grpc.auth/2.57.0",
+      "hashPath": "grpc.auth.2.57.0.nupkg.sha512"
+    },
+    "Grpc.Core/2.46.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZoRg3KmOJ2urTF4+u3H0b1Yv10xzz2Y/flFWS2tnRmj8dbKLeiJaSRqu4LOBD3ova90evqLkVZ85kUkC4JT4lw==",
+      "path": "grpc.core/2.46.6",
+      "hashPath": "grpc.core.2.46.6.nupkg.sha512"
+    },
+    "Grpc.Core.Api/2.57.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-48jpfMyYdhaPS6PGnk7sEqSO3+c/w11ahY+a33ymo0BsQEsBVIoJoS5xMsl5RzBlpKY41PnN+qJGMm3VyE5OQg==",
+      "path": "grpc.core.api/2.57.0",
+      "hashPath": "grpc.core.api.2.57.0.nupkg.sha512"
+    },
+    "Grpc.Net.Client/2.57.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vVDW0ePnaH9Na+wjm64vpzdj05JEjOCmAXUlANVc+s3hBBreEizfbmlzWPjsL6ZskaSrA59Ckb0J2l1HMvtMHQ==",
+      "path": "grpc.net.client/2.57.0",
+      "hashPath": "grpc.net.client.2.57.0.nupkg.sha512"
+    },
+    "Grpc.Net.Common/2.57.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-babJpsAwVH3lPjg8cvWGqW+Fos1RN+cqudfkW2EyB2DK2v5yjD2axZ1Uay6kR6ec2/p9ljodktrfoJ2lJ/pwnQ==",
+      "path": "grpc.net.common/2.57.0",
+      "hashPath": "grpc.net.common.2.57.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h3j/QfmFN4S0w4C2A6X7arXij/M/OVw3uQHSOFxnND4DyAzO1F9eMX7Eti7lU/OkSthEE0WzRsfT/Dmx86jzCw==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/7.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/7.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pkeBFx0vqMW/A3aUVHh7MPu3WkBhaVlezhSZeb1c9XD0vUReYH1TLFSy5MxJgZfmz5LZzYoErMorlYZiwpOoNA==",
+      "path": "microsoft.extensions.logging.abstractions/7.0.1",
+      "hashPath": "microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Dataflow/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BmSJ4b0e2nlplV/RdWVxvH7WECTHACofv06dx/JwOYc0n56eK1jIWdQKNYYsReSO4w8n1QA5stOzSQcfaVBkJg==",
+      "path": "system.threading.tasks.dataflow/7.0.0",
+      "hashPath": "system.threading.tasks.dataflow.7.0.0.nupkg.sha512"
+    },
+    "zb-client/2.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-H2otp2NfvhHFhTMJG/ZkkwG4kHp9gCgXmqq9CCtpKUqg+3Q2oHYwVOO2pFfMwusBDqJ/EJblZCghM+9cZ2+6xg==",
+      "path": "zb-client/2.3.0",
+      "hashPath": "zb-client.2.3.0.nupkg.sha512"
+    }
+  }
+}
