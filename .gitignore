@@ -306,6 +306,7 @@ sources/.cr/personal
 
 # Rider
 sources/.idea
+**/.idea
 
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
