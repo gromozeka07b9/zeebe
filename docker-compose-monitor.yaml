@@ -18,6 +18,16 @@ services:
     networks:
       - zeebe_network
 
+  zeebe-http-worker:
+    container_name: zeebe-http-worker
+    image: ghcr.io/camunda-community-hub/zeebe-http-worker:1.0.0
+    environment:
+      - zeebe.client.broker.contactPoint=zeebe:26500
+    depends_on:
+      - zeebe
+    networks:
+      - zeebe_network
+      
   simple-monitor-in-memory:
     container_name: zeebe-simple-monitor-in-memory
     image: ghcr.io/camunda-community-hub/zeebe-simple-monitor:2.4.1

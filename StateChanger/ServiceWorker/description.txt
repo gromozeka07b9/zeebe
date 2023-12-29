@@ -1,0 +1,31 @@
+Schedule
+Обязательные свойства: Id, WorkTypeId (только из списка, валидируется)
+Автоматически заполняется: CreateDate, Number, Status
+
+Assign
+Обязательные свойства: Id, PersonId (исполнитель только из списка, валидируется)
+Автоматически заполняется: AssignDate, Status
+
+Start
+Обязательные свойства: Id
+Автоматически заполняется: StartDate, Status
+
+Finish
+Обязательные свойства: Id
+Автоматически заполняется: EndDate, Status
+
+Cancel
+Обязательные свойства: Id, Description
+Автоматически заполняется: EndDate, Status
+
+Pause
+Обязательные свойства: Id, Description
+Автоматически заполняется: PauseDate, Status
+
+Resume
+Обязательные свойства: Id, Description
+Автоматически заполняется: ResumeDate, Status
+
+Delete
+Обязательные свойства: Id
+Автоматически заполняется: Status

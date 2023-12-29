@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateChanger", "StateChanger.csproj", "{3A4FD718-68E4-40CC-8A9D-0601CD428627}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateChanger", "ServiceWorker\ServiceWorker.csproj", "{3A4FD718-68E4-40CC-8A9D-0601CD428627}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiWorker", "WebApiWorker\WebApiWorker.csproj", "{987A26FC-9D8A-4B83-AFF0-20996133200B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +14,9 @@ Global
 		{3A4FD718-68E4-40CC-8A9D-0601CD428627}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A4FD718-68E4-40CC-8A9D-0601CD428627}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A4FD718-68E4-40CC-8A9D-0601CD428627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{987A26FC-9D8A-4B83-AFF0-20996133200B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987A26FC-9D8A-4B83-AFF0-20996133200B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987A26FC-9D8A-4B83-AFF0-20996133200B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987A26FC-9D8A-4B83-AFF0-20996133200B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

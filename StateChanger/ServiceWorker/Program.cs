@@ -50,12 +50,12 @@ static void HandleTaskCommandJob(IJobClient jobClient, IJob job)
     var jobKey = job.Key;
     Console.WriteLine("Handling job: " + job);
     var command = JsonSerializer.Deserialize<CommandDescription>(job.Variables);
-    CommandResult commandResult = null;
+    CommandResult commandResult = new CommandResult();
     switch (command?.Command)
     {
         case "Schedule":
         {
-            commandResult = taskCommands.Schedule(command.WorkType, command.Person);
+            commandResult = taskCommands.Schedule(command.WorkTypeId);
         };break;
         case "Start":
         {
@@ -67,15 +67,35 @@ static void HandleTaskCommandJob(IJobClient jobClient, IJob job)
         };break;
         case "Cancel":
         {
-            commandResult = taskCommands.Cancel(command.Id, command.CancelReasonText);
+            commandResult = taskCommands.Cancel(command.Id, command.Description);
+        };break;
+        case "Pause":
+        {
+            commandResult = taskCommands.Pause(command.Id, command.Description);
+        };break;
+        case "Resume":
+        {
+            commandResult = taskCommands.Resume(command.Id);
+        };break;
+        case "Assign":
+        {
+            commandResult = taskCommands.Assign(command.Id, command.PersonId);
         };break;
     }
+
     jobClient.NewCompleteJobCommand(jobKey)
         .Variables(JsonSerializer.Serialize(commandResult))
         .Send()
         .GetAwaiter()
         .GetResult();
- 
+    return;
+    /*jobClient.NewFailCommand(jobKey)
+        .Retries(0)
+        .ErrorMessage("Error command execution")
+        .Send()
+        .GetAwaiter()
+        .GetResult();*/
+
     /*if (jobKey % 3 == 0)
     {
         jobClient.NewCompleteJobCommand(jobKey)
@@ -103,7 +123,7 @@ public class CommandDescription
 {
     public string Id { get; set; }
     public string Command { get; set; }
-    public string WorkType { get; set; }
-    public string Person { get; set; }
-    public string CancelReasonText { get; set; }
+    public string WorkTypeId { get; set; }
+    public string PersonId { get; set; }
+    public string Description { get; set; }
 }

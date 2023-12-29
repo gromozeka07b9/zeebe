@@ -1,6 +1,7 @@
+using ServiceWorker.Infrastructure;
 using StateChanger.Infrastructure;
 
-namespace StateChanger.Commands;
+namespace ServiceWorker.Commands;
 
 public class TaskCustomCommands
 {
@@ -18,7 +19,7 @@ public class TaskCustomCommands
     public void CustomCommand(string id, string commandName, string state, string workType, string person, string cancelReasonText)
     {
         Console.WriteLine($"Custom command [{commandName}] executed, id [{id}]");
-        taskRepository.AddOrUpdate(id, state, workType, person, cancelReasonText);
+        //taskRepository.AddOrUpdate(id, state, workType, person, cancelReasonText);
     }
 
 }
