@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "df463b8d-9c62-4fbf-952a-521a61f0a392",
+		"name": "StateChanger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "279434"
+	},
+	"item": [
+		{
+			"name": "Messages",
+			"item": [
+				{
+					"name": "Schedule Message",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"EventName\":\"Schedule\",\n    \"Id\":null,\n    \"Data\":{\n        \"WorkTypeId\":\"work1\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5081/publishMessage",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5081",
+							"path": [
+								"publishMessage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Start Message",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"EventName\":\"Start\",\n    \"Id\":\"6284312b-10da-43a4-b1bc-b029f5eedd0d\",\n    \"Data\":{\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5081/publishMessage",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5081",
+							"path": [
+								"publishMessage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Finish Message",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"EventName\":\"Finish\",\n    \"Id\":\"0dbe08b8-3712-4f09-a6fb-18642cc10b4c\",\n    \"Data\":{\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5081/publishMessage",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5081",
+							"path": [
+								"publishMessage"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sync commands",
+			"item": [
+				{
+					"name": "Schedule Sync Call",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"EventName\":\"Schedule\",\n    \"Id\":null,\n    \"Data\":{\n        \"WorkTypeId\":\"work1\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5081/call",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5081",
+							"path": [
+								"call"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign Sync Call",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"EventName\":\"Assign\",\n    \"Id\":\"aacbd09d-d3ed-46cc-acbc-9924cc46a891\",\n    \"Data\":{\n        \"PersonId\":\"user1\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5081/call",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5081",
+							"path": [
+								"call"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Start Sync Call",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"EventName\":\"Start\",\n    \"Id\":\"0dbe08b8-3712-4f09-a6fb-18642cc10b4c\",\n    \"Data\":{\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5081/call",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5081",
+							"path": [
+								"call"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Finish Sync Call",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"EventName\":\"Finish\",\n    \"Id\":\"0dbe08b8-3712-4f09-a6fb-18642cc10b4c\",\n    \"Data\":{\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5081/call",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5081",
+							"path": [
+								"call"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel Sync Call",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"EventName\":\"Cancel\",\n    \"Id\":\"aacbd09d-d3ed-46cc-acbc-9924cc46a891\",\n    \"Data\":{\n        \"Description\":\"Test cancel reason\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5081/call",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5081",
+							"path": [
+								"call"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pause Sync Call",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"EventName\":\"Pause\",\n    \"Id\":\"aacbd09d-d3ed-46cc-acbc-9924cc46a891\",\n    \"Data\":{\n        \"Description\":\"Test cancel reason\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5081/call",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5081",
+							"path": [
+								"call"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Infrastructure",
+			"item": [
+				{
+					"name": "deploy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5081/deploy",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5081",
+							"path": [
+								"deploy"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Resume Sync Call",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"EventName\":\"Resume\",\n    \"Id\":\"aacbd09d-d3ed-46cc-acbc-9924cc46a891\",\n    \"Data\":{\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5081/call",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5081",
+					"path": [
+						"call"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
