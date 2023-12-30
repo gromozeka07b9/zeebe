@@ -47,9 +47,15 @@ app.MapPost("/publishMessage", async (httpContext) =>
 {
     StreamReader streamReader = new StreamReader(httpContext.Request.Body);
     string body = await streamReader.ReadToEndAsync();
+    
+    var jsonMessage = JsonSerializer.Deserialize<ZeebeMessage>(body);
+    var eventName = jsonMessage?.EventName ?? "";
+    var eventTaskId = jsonMessage?.Id ?? "";
+
     await zeebeClient.NewPublishMessageCommand()
-        .MessageName("ExternalEvent")
-        .CorrelationKey(Guid.NewGuid().ToString())
+        .MessageName(eventName)
+        .CorrelationKey(eventTaskId)
+        .TimeToLive(TimeSpan.FromSeconds(600))
         .Variables(body)
         .Send();
 });
@@ -102,5 +108,12 @@ public class ZeebeCommandResult
 {
     public bool Success { get; set; }
     public string Description { get; set; }
+}
+
+public class ZeebeMessage
+{
+    public string EventName { get; set; }
+    public string Id { get; set; }
+    public object Data { get; set; }
 }
 
